@@ -96,3 +96,12 @@ Abaixo, apresentamos algumas capturas de tela da interface principal do Ágata:
 O código-fonte completo do projeto Ágata pode ser encontrado no link abaixo:
 
 ➡️ **[Link para o Repositório GitHub](https://github.com/pamellachristiny/frontendHcSprint.git)**
+
+### Video do Youtube
+
+➡️ **[Link para o video ](https://youtu.be/qX-hbbHeisQ)**
+
+
+### Vercel
+
+➡️ **[Link para o vercel] (challege-nexum-db1g-kkcsnzqyc-pams-projects-e9418235.vercel.app)**
