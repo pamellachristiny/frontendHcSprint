@@ -1,5 +1,12 @@
-import { AppRoutes } from "./routes/AppRoutes";
+// src/App.tsx
 
-export default function App() {
-  return <AppRoutes />;
+// ✅ CORRETO: Importação padrão
+import AppRoutes from "./routes/AppRoutes"; 
+
+function App() {
+  return (
+    <AppRoutes />
+  );
 }
+
+export default App;
