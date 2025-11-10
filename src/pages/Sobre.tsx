@@ -1,4 +1,6 @@
+// src/pages/Sobre.tsx
 
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -8,37 +10,34 @@ export default function Sobre() {
       <Header />
       <div className="container mx-auto p-6 min-h-screen max-w-4xl">
         <h1 className="text-5xl font-extrabold mb-8 text-indigo-700 text-center border-b-4 border-purple-300 pb-3">
-          Sobre o Projeto Ágata
+          🌟 Sobre o Projeto Ágata
         </h1>
         
         <section className="mb-10 p-6 bg-white rounded-xl shadow-lg">
-          <h2 className="text-3xl font-bold mb-4 text-purple-600">Nossa Missão</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Nossa missão é **democratizar o acesso à saúde digital**. Acreditamos que todos têm o direito de realizar uma teleconsulta de forma autônoma e segura, independentemente de suas habilidades motoras ou nível de familiaridade com a tecnologia. O Ágata existe para ser a **voz da inclusão** no atendimento médico remoto.
-          </p>
-        </section>
-
-        <section className="mb-10 p-6 bg-gray-50 rounded-xl shadow-lg border-l-4 border-indigo-500">
-          <h2 className="text-3xl font-bold mb-4 text-purple-600"> O Conceito Ágata</h2>
+          <h2 className="text-3xl font-bold mb-4 text-purple-600">Objetivo e Escopo do Projeto</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            O nome "Ágata" remete a um mineral conhecido por sua beleza e por ser um condutor de energia. Em nosso projeto, a Ágata é a **pedra fundamental da conexão** entre paciente e médico.
+            O **Ágata** é uma solução inovadora que visa transformar o acesso à saúde para pacientes com desafios motores, cognitivos ou tecnológicos. Em vez de se adaptarem a sistemas complexos de agendamento e teleconsulta, eles agora têm uma ferramenta desenvolvida pensando em suas necessidades específicas.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Usamos tecnologia de **processamento de linguagem natural (NLP)** para transformar comandos de voz simples em ações complexas, como agendar, cancelar e iniciar consultas, garantindo uma experiência intuitiva e acessível.
+            Nosso principal objetivo é conectar esses pacientes com os profissionais de saúde ideais de forma simples e direta. Utilizando o aplicativo do HC, os pacientes receberão **notificações intuitivas e fixas** que servem como atalhos diretos para as teleconsultas, eliminando barreiras e simplificando o processo do início ao fim. Com o Ágata, a saúde digital se torna acessível a todos.
           </p>
         </section>
 
-        <section className="p-6 bg-white rounded-xl shadow-lg">
-          <h2 className="text-3xl font-bold mb-4 text-purple-600"> Pilares Tecnológicos</h2>
+        <section className="p-6 bg-gray-50 rounded-xl shadow-lg border-l-4 border-indigo-500">
+          <h2 className="text-3xl font-bold mb-4 text-purple-600">Descrição das Funções de Notificação</h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            Temos três opções principais de atuação para garantir que o paciente não perca sua teleconsulta:
+          </p>
+          
           <ul className="list-disc list-inside space-y-3 text-lg text-gray-700">
             <li>
-              **Acessibilidade Universal:** Design focado em grandes contrastes e navegação simplificada.
+              **Processo de Notificação Fixa e Pontual:** Esta notificação serve como um atalho direto. Para interação, basta clicar no botão "ENTRAR", que levará o paciente diretamente para a sala virtual da consulta.
             </li>
             <li>
-              **Interação por Voz:** A principal forma de navegação é por comandos de voz e respostas audíveis.
+              **Processo de Notificação de Pré-Consulta:** Este aviso é enviado antes do horário agendado. Ao clicar no botão "ENTRAR", o paciente é direcionado para a sala de espera virtual.
             </li>
             <li>
-              **API Integrada:** Conexão segura com o sistema de Back-end (Java/Render) para gestão em tempo real de agendamentos e dados de pacientes.
+              **Processo de Notificação de Consulta Atrasada:** Caso a consulta já tenha iniciado, esta notificação alerta o paciente. Ao clicar no botão "ENTRAR", ele será levado diretamente para a sala virtual.
             </li>
           </ul>
         </section>
