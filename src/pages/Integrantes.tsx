@@ -4,7 +4,10 @@ function Integrantes() {
   return (
     <div className="p-8 text-center">
       <h1 className="text-2xl font-bold">Integrantes do Projeto</h1>
-      <p className="mt-4">Pamella Christiny • [outros nomes]</p>
+      <ul className="mt-4 space-y-2">
+        <li>Pamella Christiny</li>
+        <li>[adicione os outros nomes]</li>
+      </ul>
     </div>
   );
 }
