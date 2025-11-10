@@ -1,73 +1,98 @@
-# React + TypeScript + Vite
+💎 Ágata: Teleconsulta Acessível e Guiada por Voz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌟 1. Visão Geral do Projeto
 
-Currently, two official plugins are available:
+O **Ágata** é uma solução inovadora desenvolvida para garantir que pacientes com desafios motores, cognitivos ou tecnológicos tenham acesso fácil e inclusivo a serviços de teleconsulta. Nosso foco é fornecer uma experiência de usuário simplificada e, principalmente, **guiada por áudio/voz**, eliminando barreiras digitais no acesso à saúde.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ 2. Informações Técnicas e Manipulação do Sistema (3,4 Pontos)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+Este projeto foi construído utilizando as seguintes tecnologias principais, garantindo um desenvolvimento moderno e eficiente:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Categoria | Tecnologia | Descrição |
+| :--- | :--- | :--- |
+| **Frontend** | React | Biblioteca JavaScript para construção da interface de usuário. |
+| **Roteamento** | React Router DOM | Gerenciamento de rotas e navegação entre páginas. |
+| **Estilização** | Tailwind CSS | Framework utilitário para estilização rápida e responsiva. |
+| **Linguagem** | JavaScript / TypeScript | Linguagem principal do projeto (dependendo da sua escolha). |
+| **Ambiente** | Node.js / npm ou yarn | Ambiente de execução e gerenciador de pacotes. |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Como Rodar o Projeto (Passos para Manipulação)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Para clonar e rodar o projeto em sua máquina local, siga os passos abaixo:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clone o Repositório:**
+    ```bash
+    git clone [LINK DO SEU REPOSITÓRIO GITHUB AQUI]
+    cd [NOME DA PASTA DO PROJETO]
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2.  **Instale as Dependências:**
+    ```bash
+    # Se estiver usando npm
+    npm install
+    
+    # Ou se estiver usando yarn
+    yarn
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3.  **Inicie o Servidor de Desenvolvimento:**
+    ```bash
+    # Para iniciar o aplicativo em modo de desenvolvimento
+    npm run dev 
+    
+    # Ou
+    yarn dev 
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4.  O projeto estará acessível em `http://localhost:[PORTA]`.
+
+### Estrutura de Pastas do Projeto
+
+A organização do projeto segue a seguinte estrutura, baseada nas convenções do React:
+
+agata/ ├── node_modules/ ├── public/ ├── src/ │ ├── assets/ # Imagens e Ícones │ │ ├── logo.svg │ │ └── [OUTRAS IMAGENS] │ ├── components/ # Componentes reutilizáveis (Header, Footer, etc.) │ │ ├── Header.jsx │ │ └── Footer.jsx │ ├── pages/ # Componentes de página (Home, Solucao, Contato, Integrantes) │ │ ├── Home.jsx │ │ ├── Integrantes.jsx │ │ ├── Solucao.jsx │ │ └── Contato.jsx │ ├── App.jsx # Componente principal / Roteamento (se não usar AppRoutes) │ ├── AppRoutes.jsx # Arquivo dedicado para a configuração das rotas │ └── main.jsx # Ponto de entrada (root) ├── README.md # Este arquivo ├── package.json └── tailwind.config.js
+
+
+---
+
+## 🧑‍💻 3. Integrantes e Contato
+
+| Nome Completo | Matrícula (R.A.) | Turma |
+| :--- | :--- | :--- |
+| Felipe Ribeiro Salles de Camargo | 565224 | 1TDSPY |
+| Pamella Christiny Chaves Brito | 565206 | 1TDSPY |
+---
+
+## 🖼️ 4. Mídia e Representação Visual
+
+### Imagens Relacionadas ao Projeto
+
+Abaixo, apresentamos algumas capturas de tela da interface principal do Ágata:
+
+| Página | Imagem |
+| :--- | :--- |
+| **Home (Desktop)** | ![Captura de tela da página inicial do Ágata com a notificação]([LINK PARA A IMAGEM DA HOME AQUI]) |
+| **Página Solução** | ![Captura de tela da página que explica a Solução guiada por voz]([LINK PARA A IMAGEM DA SOLUÇÃO AQUI]) |
+| **Notificação Áudio** | ![Exemplo da notificação de consulta que aparece na Home]([LINK PARA A IMAGEM DA NOTIFICAÇÃO AQUI]) |
+
+### Ícones e Identidade Visual
+
+| Item | Ícone |
+| :--- | :--- |
+| **Logo/Favicon** | [Link ou descrição do ícone principal do Ágata, ex: um cristal ou um símbolo de voz] |
+| **Ícone de Notificação** | 🔔 |
+| **Cor Primária** | Indigo/Roxo (`#4F46E5` ou `bg-indigo-600`) |
+
+---
+
+## 🔗 5. Links de Acesso (3,3 Pontos cada)
+
+### Repositório no GitHub
+
+O código-fonte completo do projeto Ágata pode ser encontrado no link abaixo:
+
+➡️ **[Link para o Repositório GitHub](https://github.com/pamellachristiny/frontendHcSprint.git)**
