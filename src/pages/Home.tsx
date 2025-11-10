@@ -13,17 +13,15 @@ export default function Home() {
       setShowNotification(true);
     }, 2000);
 
-    // Opcional: A notificação pode ficar visível até o usuário interagir
-    // Se quiser que ela desapareça automaticamente, descomente:
-    /*
+ 
     const hideTimer = setTimeout(() => {
       setShowNotification(false);
     }, 7000);
-    */
+    
 
     return () => {
       clearTimeout(timer);
-      // clearTimeout(hideTimer); // Limpeza se usar o hideTimer
+      clearTimeout(hideTimer);
     };
   }, []);
 
@@ -31,7 +29,7 @@ export default function Home() {
   const handleStartConsultation = () => {
     // Redireciona o usuário para a rota "/solucao"
     navigate('/solucao');
-    // Opcional: Esconde a notificação após o clique
+
     setShowNotification(false); 
   };
 
